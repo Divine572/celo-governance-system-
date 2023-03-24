@@ -1,0 +1,129 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getProposalCount",
+    "outputs": [
+      {
+        "name": "count",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "proposalId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getProposal",
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "proposer",
+            "type": "address"
+          },
+          {
+            "name": "deposit",
+            "type": "uint256"
+          },
+          {
+            "name": "timestamp",
+            "type": "uint256"
+          },
+      {
+        "name": "transactionCount",
+        "type": "uint256"
+      },
+      {
+        "name": "descriptionUrl",
+        "type": "string"
+      }
+    ]
+  }
+],
+"payable": false,
+"stateMutability": "view",
+"type": "function"
+},
+{
+"constant": true,
+"inputs": [
+{
+"name": "proposalId",
+"type": "uint256"
+}
+],
+"name": "getProposalStage",
+"outputs": [
+{
+"name": "stage",
+"type": "uint32"
+}
+],
+"payable": false,
+"stateMutability": "view",
+"type": "function"
+},
+{
+"constant": false,
+"inputs": [
+{
+"name": "targets",
+"type": "address[]"
+},
+{
+"name": "values",
+"type": "uint256[]"
+},
+{
+"name": "signatures",
+"type": "bytes[]"
+},
+{
+"name": "calldatas",
+"type": "bytes[]"
+},
+{
+"name": "descriptionUrl",
+"type": "string"
+}
+],
+"name": "propose",
+"outputs": [
+{
+"name": "proposalId",
+"type": "uint256"
+}
+],
+"payable": true,
+"stateMutability": "payable",
+"type": "function"
+},
+{
+"constant": false,
+"inputs": [
+{
+"name": "proposalId",
+"type": "uint256"
+},
+{
+"name": "value",
+"type": "uint256"
+}
+],
+"name": "vote",
+"outputs": [],
+"payable": false,
+"stateMutability": "nonpayable",
+"type": "function"
+}
+]
